@@ -1,5 +1,14 @@
 <script>
-	import { First } from '$lib';
+	import { Transition, Sheet } from '$lib';
+
+	let open = false;
 </script>
 
-<First name="World" textColor="yellowgreen" />
+<button on:click={() => open = !open}>toggle</button>
+
+
+	<Sheet open={open}>
+		<div class="w-60 p-10 bg-gray-50 rounded-r-xl my-auto">
+			hoi
+		</div>
+	</Sheet>
